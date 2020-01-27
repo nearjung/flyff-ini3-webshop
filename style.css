@@ -1,0 +1,124 @@
+/*****************************************
+**		 	Flyff Earthquake v4.0		**
+**			  	 style.css				**
+**		   Created by Treachery.		**
+**		   Ripped from gPotato.			**
+*****************************************/
+
+/************** Common ******************/
+* {margin: 0; padding: 0; border: 0;}
+body {cursor: url('images/flyff.cur'), default; overflow: hidden; font-family:Tahoma; font-size:12px;}
+a{cursor: url('images/flyff_link.cur'), pointer;}
+a:link {color:#4a80c4; text-decoration:none;}
+a:visited {color:#4a80c4; text-decoration:none;}
+a:hover {color:#4a80c4; text-decoration:none;}
+a img {border: 0;}
+.clear {clear: both;}
+
+p, div, td, li, input, textarea, select {font-family: arial; font-size: 12px; color: #56585d;}
+p {padding: 5px;}
+
+
+#wrapper  {background: url('images/body_bg.jpg') no-repeat bottom center; color: #56585d; font-size: 14px; width: 790px; margin: auto; height: 569px; position: relative; display: block; padding-top: 1px;}
+	#header {width: 760px; height: 85px; margin: 10px auto 0; display: block; background: url('images/menu_bg.png') no-repeat 0 7px;}
+		#logo {margin-left: 5px; float: left; }
+		#menu {float: left; width: 630px; margin-top: 10px;}
+			#menu .menublock {position: relative;}
+				#menu .divider {float: left; margin-top: 5px; display: block;}
+				#menu .selectedmenu {position: absolute; top: -13px; display: block;}
+				#menu a.main {height: 30px; display: block; float: left; width: 68px; text-align: center; padding: 5px 4px;}
+				#menu a.main .selected {border: #000000 solid 1px;}
+					
+					#menu a img {vertical-align: middle; padding-top: 3px;}
+				#menu .submenu {position: absolute; top: 30px; display: none;}
+					#menu .submenu a {float: left; width: 109px; height: 35px; background: url('images/submenu_bg.png') no-repeat; display: block; margin-right: 2px; text-align: center;}
+				#submenu_1{left: 0px;}
+				#submenu_2{left: 60px;}
+				#submenu_3{left: 110px;}
+				#submenu_4{left: 170px;}
+				#submenu_5{left: 180px;}
+				#submenu_6{left: 380px;}
+				#submenu_7{left: 60px;}
+				#submenu_8{left: 400px;}
+	#content {width: 760px; margin: 0px auto; display: block; }
+		#list_outer {height: 412px;}
+		#content b.title {padding: 7px 10px 0; display: block; color: #e32f33; }
+		#content #left {float: left; width: 584px; height: 475px; margin-right: 3px;}
+			#item_cat {background: url('images/itemcat_title.jpg') no-repeat; width: 583px; height: 29px;}
+			#item_content {border: 1px solid #cccccc; height: 363px; width: 581px; margin-top: 1px; overflow: auto;}
+				#item_content .item {width: 262px; height: 112px; float: left; margin: 4px 13px 5px; display: block;}
+					.item p.item_name {text-transform: uppercase; font-weight: bold; color: #56585d; font-size: 11px; padding: 0px; min-height:8px; cursor: url('images/flyff_link.cur'), pointer;}
+					.item img.item_pic {border: 1px solid #cccccc; padding: 9px 4px; margin: 3px 2px 0 0; display: block; width: 77px; height: 77px; float: left; cursor: url('images/flyff_link.cur'), pointer;}
+					.item div.item_descrip {font-weight: bold; color: #e57716; font-size: 11px; float: left; width: 160px; height: 57px; margin-top: 3px; border: 1px solid #cccccc; padding: 5px;}
+					.item_descrip span, #item_detail b.billing_info span { text-decoration: line-through; font-size: 10px; display: block; }
+					.item a.buttons {width: 82px; height: 24px; font-weight: bold; border: 1px solid #cccccc; text-transform: uppercase; float: left; margin: 2px 2px 0 0; text-align: center; line-height: 2em; color: #7c7e84;}
+						.item a.buttons:hover  {color: #493cc8;}
+					.item a.buy{width: 84px; margin-right: 0px;}
+					
+					#item_content .pagetitle {padding: 5px; font-weight: bold; text-transform: uppercase; color: #707b98;}
+					#item_content .warn {padding: 2px 5px;}
+						#item_content .pagetitle img {margin: 0 2px;}
+					#item_content .highlight {color: #e65458; font-weight: bold;}
+						#item_content #message {border: 1px solid #cccccc; width: 548px; background: url('images/message_bg.jpg') no-repeat bottom center; height: 330px; margin-left: 10px; color: #707b98;}
+						
+						#item_content #hist_table {border: 1px solid #cccccc; width: 560px; margin-left: 10px; color: #707b98; border-collapse: collapse;}
+							#item_content #hist_table tr, td, th, input,select, textarea {border: 1px solid #cccccc; text-align: center; resize: no;}
+								#item_content #hist_table tr.theader {font-weight: bold;}
+							#item_content #hist_table td{padding: 1px; min-height:33px; }
+								#item_content #hist_table #submit {background: url('images/button_search.jpg') no-repeat; width: 65px; height: 23px; margin-left: 4px; border: 0; cursor: pointer;}
+							
+						#item_content #warning {background: url('images/warning_bg.jpg') no-repeat; width: 550px; height: 212px; margin-left: 10px; font-size: 14px}
+						#item_content #notice {background: url('images/notice_bg.jpg') no-repeat; width: 550px; height: 106px; margin-left: 10px;}
+							#item_content #warning p {padding: 5px 10px; line-height: 15px;}
+							#item_content #notice p {padding: 5px 10px; line-height: 15px;}
+
+			#page_nav {width: 500px; height: 15px; padding: 0; text-align: center; margin: 2px auto;}
+				#page_nav a {color: #56585d; font-size: 13px; margin: auto 3px; font-weight: bold;}
+					#page_nav span {color:#5F87E1; font-size: 13px;}
+
+			#bottom_menu {background: url('images/menu_bottom.png') no-repeat; width: 584px; height: 54px; margin-top: 2px; position: relative;}
+				#bottom_menu div, #bottom_menu a {float: left; height: 15px; margin-top: 22px;}
+				#bottom_menu1 {width: 110px; margin-left: 44px;}
+				#bottom_menu2 {width: 145px; margin-left: 80px;}
+				#bottom_menu3 {width: 71px; margin-left: 95px;}
+		#content #right {float: left; width: 168px; height: 475px;}
+			#item_title {background: url('images/item_title.jpg') no-repeat; width: 167px; height: 29px;}
+			#item_detail {border: 1px solid #cccccc; min-height: 440px; width: 165px; margin-top: 1px;}
+			#item_detail #item_info {}
+				#item_detail p.item_name {text-transform: uppercase; font-weight: bold; color: #56585d; font-size: 11px; height:35px;}
+				#item_detail .item_img {float: left; border: 1px solid #cccccc; margin: 2px; max-width: 64px; max-height: 64px;}
+				#item_detail b.billing_info {float: left; font-weight: bold; color: #e57716; font-size: 11px; width: 85px; height: 57px; margin-top: 3px; padding: 5px 3px; }
+				#item_detail .item_descrip {height: 148px; border-bottom: 1px solid #cccccc; font-size: 11px; color: #707b98; overflow:auto;}
+				#item_detail #item_bill {margin-top: 3px; border-top: 1px solid #cccccc; padding-top: 17px; }
+					 #item_bill b.dets {display: block; width: 150px; margin: 3px auto; color: #707b98; position: relative;}
+						#item_bill b.dets span {right: 5px; zoom: 1; height: 1%; position: absolute;}
+					 #item_bill #buy {margin-top: 14px; display: block; }
+						#buy img {cursor: url('images/flyff_link.cur'), pointer;}
+					 #item_bill #friendlist{height: 20px; padding-left: 5px; padding-right: 5px;}
+
+
+#msg_hide_layer {display:none; background-color:#000000; opacity:0.7; filter:alpha(opacity=70); position: absolute; z-index:10; top:0; left:0; width:100%; height:100%;}
+#msg_layer {display:none; position: absolute; z-index:15; top:0; left:0; width:100%; height:100%;}
+.msg_layer_sub {display:none; margin: auto;}
+#success_msg {background: url('images/success.jpg') no-repeat top center; width: 400px; height: 230px; }
+	#success_msg #close {float: right; margin: 190px 5px 0; outline: 0;}
+#success_msg2 {background: url('images/success2.jpg') no-repeat top center; width: 400px; height: 230px; }
+	#success_msg2 #close {float: right; margin: 190px 5px 0; outline: 0;}
+#fail_msg {background: url('images/fail.jpg') no-repeat top center; width: 400px; height: 230px;}
+	#fail_msg #close {float: right; margin: 190px 5px 0; outline: 0;}
+#purchase_msg{background: url('images/purchase.jpg') no-repeat top center; width: 400px; height: 230px;}
+	#purchase_msg #p_yes {margin: 197px 0 0 257px; width: 65px; height: 23px; border: 0; display: block; float: left; background: url('images/p_yes.jpg') no-repeat; cursor: url('images/flyff_link.cur'), pointer;}
+	#purchase_msg #p_no {margin: 197px 5px 0; width: 65px; height: 23px; border: 0;  display: block; float: left; background: url('images/p_no.jpg') no-repeat; cursor: url('images/flyff_link.cur'), pointer;}
+	#close {cursor: url('images/flyff_link.cur'), pointer;}
+#search_box{background: url('images/search.jpg') no-repeat top center; width: 400px; height: 230px;}
+	#search_box #p_searchbox {display: block; cursor: url('images/flyff_text.cur'), text; padding: 2px; position: absolute; margin-left: 165px; margin-top: 45px; border: 2px solid #4c3bc5;}
+	#search_box #p_search {margin: 197px 0 0 257px; width: 65px; height: 23px; border: 0; display: block; float: left; background: url('images/button_search.jpg') no-repeat; cursor: url('images/flyff_link.cur'), pointer;}
+	#search_box #p_close {margin: 197px 5px 0; width: 65px; height: 23px; border: 0;  display: block; float: left; background: url('images/close2.png') no-repeat; cursor: url('images/flyff_link.cur'), pointer;}
+	#close {cursor: url('images/flyff_link.cur'), pointer;}
+	
+table label {font-weight: bold; font-size: 125%;}
+table .field {width: 140px;}
+table .input {width: 260px;}
+table .submit {text-align: center;}
+.input_sel{color:#111111; border: 1px solid #A1A1A1;}
+.bundle {display: none;}
